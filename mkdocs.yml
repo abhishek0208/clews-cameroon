@@ -1,6 +1,32 @@
 site_name: CLEWs Cameroon
 nav:
-    - Home: index.md
-    #- About: docs/about.md
-theme: readthedocs
-
+  - Overview: index.md
+  - Scope: scope.md
+  - Structure: structure.md
+  - Data: data.md
+  - Scenarios: scenarios.md
+  - Results: results.md
+  - Model Download: model_download.md
+  - Annex: annex.md
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    primary: blue
+    accent: white
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+#  logo: _static/tz_logo.svg
+#  favicon: _static/tz_logo_small.svg
+plugins:
+    - search
+    - table-reader
+    - pdf-export
+    - with-pdf:
+        author: UNDESA
